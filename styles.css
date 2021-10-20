@@ -16,15 +16,52 @@ html {
     font-weight: bold;
 }
 
+#counter_text {
+    color: #c5fda5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    text-shadow: 0 0 2.5px #000;
+    font-weight: bold;
+}
+
+.side_a_text {
+    color: #EFAE88;
+    display: inline;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    text-shadow: 0 0 2.5px #000;
+    font-weight: bold;
+}
+.side_b_text {
+    float: right;
+    color: #88efaa;
+    display: inline;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    text-shadow: 0 0 2.5px #000;
+    font-weight: bold;
+}
+#winner_text {
+    color: #88d2ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    text-shadow: 0 0 2.5px #000;
+    font-weight: bold;
+}
+
 #map_container {
-    /*border: 3px solid white;
-    border-radius: 10px; */
     display: flex;
     align-items: center;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
     width: 1250px;
     height: 550px;
     background-color: #e3e2df;
@@ -32,7 +69,6 @@ html {
 
 #download_button {
     margin-left: 335px;
-    margin-top: 1em;
     padding: 0.5em 1.7em;
     border: 0.16em solid rgb(255, 255, 255);
     border-radius: 2em;
@@ -51,10 +87,53 @@ html {
     background-color: #EFAE88;
 }
 
+#resign_button {
+    margin-left: 335px;
+    padding: 0.5em 1.7em;
+    border: 0.16em solid rgb(255, 255, 255);
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #000000;
+    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+    text-align: center;
+    transition: all 0.2s;
+}
+
+#resign_button:hover {
+    color: black;
+    background-color: #EFAE88;
+}
+
 #twitter_share {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 335px;
     margin-left: 1520px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; 
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    font-size: 0.5em;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }

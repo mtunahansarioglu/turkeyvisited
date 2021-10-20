@@ -14,11 +14,24 @@
 
 <body>
 
-  <div id="welcome_text">Ziyaret ettiğiniz illeri aşağıdan işaretleyebilirsiniz!</div>
+  <div id="welcome_text">&#128064;I-SAW Game&#128064;&nbsp; 
+    <div class="tooltip">*
+      <span class="tooltiptext" id="SSS">
+       * Each player takes turns choosing the city they want to choose.<br>
+       * If the player does not have a city to choose from, then presses the "Resign" button.<br>
+       * After resign button is pressed, the other player can choose as many cities as they want.<br>
+       * The map is downloaded by pressing the "Download Map" button.
+
+      </span>
+    </div></div>
+  
+  <p> <span class="side_a_text">First Visiter:&nbsp;<a class="side_a" id=side_a>0</a>&nbsp;&nbsp;&nbsp;<a id="winner_text_a"></a> </span>
+  <span class="side_b_text"><a id="winner_text_b">&nbsp;&nbsp;&nbsp;</a>Second Visiter:&nbsp;<a class="side_b" id=side_b>0</a> </span></p>
 
   <div id="map_container"></div>
+  <button id="resign_button" class="custom_buttons" onclick="resignGame()">Resign:(</button>
 
-  <button id="download_button" onclick="downloadMap()">Haritayı İndir</button>
+  <button id="download_button" class="custom_buttons" onclick="downloadMap()">Download Map</button>
 
   <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
