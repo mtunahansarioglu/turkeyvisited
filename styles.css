@@ -82,6 +82,21 @@ html {
     transition: all 0.2s;
 }
 
+#original_map {
+    margin-left: 335px;
+    padding: 0.2em 1em;
+    border: 0.16em solid rgb(255, 255, 255);
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #000000;
+    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+    text-align: center;
+    transition: all 0.2s;
+}
+
 #download_button:hover {
     color: black;
     background-color: #EFAE88;
